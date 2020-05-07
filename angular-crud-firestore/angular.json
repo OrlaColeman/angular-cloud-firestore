@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-crud-firestore": {
+    "firestore": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-crud-firestore",
+            "outputPath": "dist/firestore",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-crud-firestore:build"
+            "browserTarget": "firestore:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-crud-firestore:build:production"
+              "browserTarget": "firestore:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-crud-firestore:build"
+            "browserTarget": "firestore:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
         }
       }
     },
-    "angular-crud-firestore-e2e": {
+    "firestore-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-crud-firestore:serve"
+            "devServerTarget": "firestore:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-crud-firestore:serve:production"
+              "devServerTarget": "firestore:serve:production"
             }
           }
         },
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "angular-crud-firestore"
+  "defaultProject": "firestore"
 }
