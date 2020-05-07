@@ -4,16 +4,6 @@
 
 export const environment = {
   production: false,
-  firebaseConfig : {
-    apiKey: "AIzaSyAq2Fp5cOfK-wAswg9Fj424TD0aMMHxDpo",
-    authDomain: "tempo-antiques-db.firebaseapp.com",
-    databaseURL: "https://tempo-antiques-db.firebaseio.com",
-    projectId: "tempo-antiques-db",
-    storageBucket: "tempo-antiques-db.appspot.com",
-    messagingSenderId: "14189401434",
-    appId: "1:14189401434:web:16e2fee0083e1796c64f63",
-    measurementId: "G-KNN3YCEKD5"
-  }
 };
 
 /*
